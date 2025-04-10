@@ -1,8 +1,11 @@
 #include <stdio.h>
 
 int main() {
-   int length = 10;
-    int width = 5;
+    
+    //1
+
+    int length ;
+    int width ;
     int X = (length * width);
     int Y = (width * 2 + length *2);
 
@@ -10,18 +13,29 @@ int main() {
     printf("Area = %d \n", X);
     printf("Perimeter = %d \n", Y);
     printf("2. \n");
+    printf("enter rectangle lengh");
+    scanf("%d",&length);
+    
+    //2
 
-    int F = 95;
-    int C = (F - 32)/1.8;
+    int Fahrenheit;
+    printf("Enter temperature in Fahrenheit: ");
+    scanf("%d", &Fahrenheit);
 
-    printf("65°F = 35°C");
+    int C = (Fahrenheit-32)/1.8;
 
-    int minutes = 349;
+    printf("%d°F = ",Fahrenheit);
+    printf("%d°C\n" , C );
+    //3
+
+    int minutes;
+    printf("%d minutes", minutes);
+    scanf( %d, minutes);
     int hour = (minutes / 60);
-    int time = (minutes %60);
+    int extramins = (minutes %60);
     
-    printf("\n3.\n");
-    printf("%d minutes is equal to %d hours and %d minutes.\n", minutes, hour, time);
-    
+    printf("%d hours and %d minutes \n", hour, extramins);
+
+
     return 0;
 }
