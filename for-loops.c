@@ -24,13 +24,13 @@ for (i= 1; i < n + 1; ++i){
 //Exercise 2
 int m;
 
-printf("Enter a positive nmber:");
-scanf("%d",&n);
+printf("Enter a positive number:");
+scanf("%d",&m);
 
-int o;
-int mul = 0;
-int mult
-for (o = 1; o < m - 1; *o){
+int a;
+int mul = 1;
+for (a = 1; a < m + 1; ++a){
+    mul = mul * a;
     
 }
     printf("%d \n", mul);
