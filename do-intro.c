@@ -1,16 +1,22 @@
 #include <stdio.h>
+
 int main (){
 
-printf("Enter a number:");
-int i;
-scanf("%d", &i);
+    int n;
+    int count = 0;
 
-while( i <= 4);
-printf("%d",i);
+    printf("Enter a positive number:");
+    scanf(" %d", &n);
 
+    do{
+        n = n /10;
+        // n /=10
 
-
-
+        ++count;
+    } while(n != 0);
+        printf("Number of digits: %d\n", count);   
+    
+    
 
 
     return 0;
