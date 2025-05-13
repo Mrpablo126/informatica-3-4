@@ -1,23 +1,30 @@
 #include <stdio.h>
-int main (){
-int n;
-int count;
-printf("Enter the base number:");
-scanf(" %d", &n);
+#include <math.h>
 
-printf("\n");
-int o;
+int main ()
+{
+int base, exp;
+long double result = 1.0;
+
+printf("Enter the number base:");
+scanf(" %d", &base);
 
 printf("Enter the exponent number:");
-scanf(" %d", &o);
+scanf(" %d", &exp);
 
-do{
-    n = n * 2;
+while (exp != 0) {
+    result *=base;
+    --exp;
+}
 
-    ++count;
+printf("Result: %0.Lf\n", result );
 
-}while(n != 0);
-printf("Result: %d ^ %d = %d", n, o, count);
+pow(exp, base);
+
+printf("Result using pow: %0.Lf\n", result);
+
+
+
 
 
 
