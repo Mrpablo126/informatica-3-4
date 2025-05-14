@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main () {
+    /*
     char snack1[] = "Doritos";
     float price1 = 15.96;
     int stock1 = 13;
@@ -17,6 +18,26 @@ int main () {
     printf("1. %s - $%.2f - %d Available\n", snack1, price1, stock1);
     printf("2. %s - $%.2f - %d Available\n", snack2, price2, stock2);
     printf("3. %s - $%.3f - %d Available\n", snack3, price3, stock3);                            
+*/
+ //ajfklsajfl
+
+
+ int number;
+ printf("Select a number:");
+ scanf(" %d",&number);
+ do{
+
+    printf("This number is equal to %d, number);
+ }
+
+
+
+
+
+
+
+
+
 
     return 0;
 }

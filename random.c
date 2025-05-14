@@ -10,7 +10,7 @@ int main() {
     scanf(" %d", &num);
 
     int a = 0;
-    while( num != 0 ){
+    while( num >= 0 ){
      --num;
     ++a;
     int diceRoll = (rand() % 6) + 1;
