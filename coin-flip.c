@@ -13,12 +13,28 @@ int main (){
     printf("Guess the correct answer:");
     scanf(" %d", &n);
 
+    if(n == coin){
+        printf("Correct\n");
+    } else{
+        if(n != coin){
+            printf("Wrong\n");
+        } else{
+            if(n >= 3){
+                printf("ERROR");
+            }
+        }
+    }
+
 
    if(coin == 1){
-    printf("Head\n");
+    printf("The correct answer is Head\n");
    } else{
     if(coin == 2){
-        printf("Tails\n");
+        printf("The correct answer is Tails\n");
+    } else{
+        if(coin <= 3){
+            printf("ERROR");
+        }
     }
    }
    
